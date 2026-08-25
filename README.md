@@ -51,8 +51,8 @@ A cross-platform Flutter application integrated with Firebase that allows studen
 
 1. **Clone the repository:**
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone [https://github.com/aliaaomar/assignment_2.git](https://github.com/aliaaomar/assignment_2.git)
+cd assignment_2
 
 ```
 
