@@ -1,16 +1,99 @@
-# assignment_2
+# Student Course Enrollment App
 
-A new Flutter project.
+A cross-platform Flutter application integrated with Firebase that allows students to manage authentication, maintain a user profile, browse available courses, and enroll seamlessly.
+
+---
+
+## Features
+
+* **User Authentication:** Secure user registration and login handled via Firebase Authentication.
+* **Profile Management:** Stores and syncs student profile data within the Cloud Firestore `users` collection.
+* **Course Catalog:** Displays an interactive list of available courses fetched from Firestore.
+* **Course Enrollment:** Enables authenticated students to enroll in courses with real-time updates.
+
+---
+
+## Tech Stack
+
+* **Framework:** Flutter (Dart)
+* **Backend:** Firebase (Authentication, Cloud Firestore)
+* **Platforms Supported:** Android, iOS, Web, Windows, macOS, Linux
+
+---
+
+## Project Structure
+
+```text
+├── android/               # Android native configurations
+├── ios/                   # iOS native configurations
+├── lib/                   # Flutter source code & UI logic
+├── test/                  # Unit and widget tests
+├── web/                   # Web platform setup
+├── windows/               # Windows desktop support
+├── macos/                 # macOS desktop support
+├── linux/                 # Linux desktop support
+├── pubspec.yaml           # Dependencies and asset management
+└── analysis_options.yaml  # Linting and analysis rules
+
+```
+
+---
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+* [Flutter SDK](https://docs.flutter.dev/get-started/install) (stable channel)
+* [Firebase CLI](https://firebase.google.com/docs/cli)
+* An active Firebase project
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation & Setup
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Clone the repository:**
+```bash
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+cd your-repo-name
+
+```
+
+
+2. **Install dependencies:**
+```bash
+flutter pub get
+
+```
+
+
+3. **Configure Firebase:**
+* Configure FlutterFire via CLI:
+```bash
+flutterfire configure
+
+```
+
+
+* Alternatively, add your platform-specific configuration files manually:
+* `google-services.json` in `android/app/`
+* `GoogleService-Info.plist` in `ios/Runner/`
+
+
+
+
+4. **Run the application:**
+```bash
+flutter run
+
+```
+
+
+
+---
+
+## Database Architecture
+
+* **`users` (Collection):** Stores student metadata (`uid`, `name`, `email`, `enrolledCourses`).
+* **`courses` (Collection):** Contains course catalog items (`courseId`, `title`, `description`, `instructor`).
+
+```
+
+```
